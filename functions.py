@@ -1,6 +1,8 @@
 import sys
 
+
 def mostrar(tablero):
+    print ("-----------------------")
     print (tablero[0])
     print (tablero[1])
     print (tablero[2])
@@ -9,6 +11,7 @@ def mostrar(tablero):
     print (tablero[5])
     print (tablero[6])
     print (tablero[7])
+    
 
 def validar (pos, mov, tablero, valido=True):
     if pos[0]+mov[0] < 0 or pos[0]+mov[0] > 7:
@@ -34,3 +37,11 @@ def muerto(iteracion, recorrido, tablero):
     print ("en un callejon en paso: ", iteracion-1, " del recorrido")
     print ("recorrido: ",recorrido)
     sys.exit() 
+
+def muerto_2(iteracion, recorrido, tablero):
+    mostrar (tablero)
+    print ("recorrido: ",recorrido)
+    print ("retoceso màximo alcansado")
+    sys.exit() 
+
+
